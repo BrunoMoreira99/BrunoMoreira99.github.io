@@ -24,4 +24,7 @@ window.addEventListener('load', () => {
     $('body').scrollspy({
         target: '#sideNav'
     });
+
+    // Enable all tooltips.
+    $('[data-toggle="tooltip"]').tooltip();
 });
