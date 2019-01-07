@@ -1,0 +1,44 @@
+.t--light {
+    color: #868E96;
+}
+
+.t--light  h1,
+.t--light  h2,
+.t--light  h3,
+.t--light  h4,
+.t--light  h5,
+.t--light  h6 {
+    color: #343A40;
+}
+
+.t--light p.bv {
+    color: #F8F9FA;
+}
+
+.t--light p.ee {
+    color: #FFF;
+}
+
+.t--light .dev-icons .list-inline-item i:hover {
+    color: #5E37BB;
+}
+
+.t--light .text-primary {
+    color: #5E37BB !important;
+}
+
+.t--light a {
+    color: #5E37BB;
+}
+
+.t--light a:hover, .t--light a:focus, .t--light a:active {
+    color: #824027;
+}
+
+.t--light .dark-mode-toggler .fa-moon {
+    font-weight: 400;
+}
+
+.t--light .dark-mode-toggler .nav-link::after {
+    content: "Dark Mode Off";
+}

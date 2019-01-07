@@ -15,6 +15,8 @@
     <!-- Stylesheets -->
     <link href="assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/index.css" rel="stylesheet">
+    <link href="assets/css/light-theme.css" rel="stylesheet">
+    <link href="assets/css/dark-theme.css" rel="stylesheet">
     <!-- Fonts -->
     <link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
@@ -33,7 +35,7 @@
     <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="assets/js/index.js"></script>
 </head>
-<body id="page-top">
+<body class="t--light" id="page-top">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="icon-bar top-bar"></span>
@@ -63,6 +65,9 @@
                 </li>
             </ul>
         </div>
+        <div class="dark-mode-toggler">
+            <a class="nav-link"><i class="fa fa-moon"></i></a>
+        </div>
     </nav>
 
     <div class="container-fluid p-0">
@@ -84,7 +89,7 @@
                 </div>
             </div>
         </section>
-        <p class="mb-0 pr-2 text-right text-light"><small>4920616d204e6f6e2d62696e6172792e</small></p>
+        <p class="mb-0 pr-2 text-right bv"><small>4920616d204e6f6e2d62696e6172792e</small></p>
         <hr class="m-0">
 
         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
@@ -168,10 +173,13 @@
                         <i class="fab fa-node" data-toggle="tooltip" data-placement="bottom" title="Node.js"></i>
                     </li>
                     <li class="list-inline-item">
-                        <i class="fab fa-npm" data-toggle="tooltip" data-placement="bottom" title="NPM"></i>
+                        <i class="fab fa-npm" data-toggle="tooltip" data-placement="bottom" title="npm"></i>
                     </li>
                     <li class="list-inline-item">
                         <i class="fab fa-grunt" data-toggle="tooltip" data-placement="bottom" title="Grunt"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-python" data-toggle="tooltip" data-placement="bottom" title="Python"></i>
                     </li>
                     <li class="list-inline-item">
                         <i class="fab fa-git" data-toggle="tooltip" data-placement="bottom" title="Git"></i>
@@ -201,11 +209,11 @@
         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
             <div class="my-auto">
                 <h2 class="mb-5">Interests</h2>
-                <p>Besides loving to code small apps I find it very amusing to try and catch <i>(see what I did there?)</i> security exploits on some random services / APIs I may encounter and feel like tackling with.</p>
-                <p>Although a person who usually prefers to stay indoors I enjoy going out at night with friends and going to the cinema watch a movie or so.</p>
+                <p>Besides loving to code small apps I find it very amusing to <i data-toggle="tooltip" data-placement="bottom" title="see what I did there?">try and catch</i> security exploits on some random services / APIs I may encounter and feel like tackling with.</p>
+                <p>Although a person who usually prefers to stay indoors I'm always up to spend a great time with friends and going to the cinema watch a movie or so.</p>
                 <p>I am also very interested in nature and science in general, besides computer science, always taking into consideration the current problems haunting our beloved and unique home, Earth. Sometimes I even wonder if I should have chosen a different area, like medicine, biology or genetics, I've always found these subjects very interesting. Despite this, there's tons of other IT related subjects I would like to tackle, like machine learning!</p>
-                <p>I have a particular interest for Asian cultures, the Japanese and Korean cultures to be more precise.</p>
-                <p>When bored and with free time my inner nerd takes over and I enjoy watching a good movie or tv show, I usually enjoy all kind of genres but I prefer mostly Action, Sci-Fi, and Mystery. In addition, I love to play videogames with my friends and family, over the Internet or on the couch.</p>
+                <p>I have a particular interest for Asian culture, the Japanese and Korean culture to be more precise.</p>
+                <p>When bored and with free time my inner nerd takes over and I enjoy watching a good movie or tv show, I usually enjoy all kind of genres but I prefer mostly Action, Sci-Fi, and Mystery. In addition, I love playing videogames and boardgames with my friends and family, over the Internet or on the couch.</p>
                 <p class="ee mb-0"><small>Last but not least, like any person of culture and wisdom, I put the cereal first before the milk, always.</small></p>
                 <!-- I used to play a guitar. I was never good at it, though. -->
             </div>

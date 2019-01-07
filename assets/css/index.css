@@ -1,7 +1,6 @@
 body {
     font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     padding-top: 54px;
-    color: #868e96;
 }
 
 @media (min-width: 992px) {
@@ -20,7 +19,6 @@ h6 {
     font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     font-weight: 700;
     text-transform: uppercase;
-    color: #343a40;
 }
 
 h1 {
@@ -42,7 +40,6 @@ p.lead {
 }
 
 p.ee {
-    color: #fff;
     cursor: default;
 }
 
@@ -54,11 +51,11 @@ p.ee {
 }
 
 .social-icons a {
+    background-color: #495057;
+    color: #FFF !important;
     display: inline-block;
     height: 3.5rem;
     width: 3.5rem;
-    background-color: #495057;
-    color: #fff !important;
     border-radius: 100%;
     text-align: center;
     font-size: 1.5rem;
@@ -66,20 +63,16 @@ p.ee {
     margin-right: 1rem;
 }
 
-.social-icons a:last-child {
-    margin-right: 0;
-}
-
 .social-icons a:hover {
     background-color: #5E37BB;
 }
 
-.dev-icons {
-    font-size: 3rem;
+.social-icons a:last-child {
+    margin-right: 0;
 }
 
-.dev-icons .list-inline-item i:hover {
-    color: #5E37BB;
+.dev-icons {
+    font-size: 3rem;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -99,16 +92,13 @@ p.ee {
 }
 
 .navbar-toggler .icon-bar {
-  background-color: #fff;
-  transform: rotate(0deg) translate(0px, 0px);
-  transition: ease all .2s;
-}
-
-.navbar-toggler .icon-bar {
   display: block;
   width: 22px;
   height: 2px;
   border-radius: 1px;
+  background-color: #FFF;
+  transform: rotate(0deg) translate(0px, 0px);
+  transition: ease all .2s;
 }
 
 .navbar-toggler .icon-bar+.icon-bar {
@@ -143,6 +133,46 @@ p.ee {
 .navbar-toggler:not(.collapsed) .icon-bar:nth-child(3) {
   transform: rotate(-45deg) translate(4px, -4px);
   transition: ease all .2s;
+}
+
+.dark-mode-toggler {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1.5rem 1rem;
+    position: absolute;
+    bottom: 0;
+}
+
+.dark-mode-toggler .nav-link {
+    width: 100%;
+    font-weight: 800;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.5) !important;
+    cursor: pointer;
+}
+
+.dark-mode-toggler .nav-link::after {
+    margin-left: .5rem;
+}
+
+.dark-mode-toggler .nav-link:hover {
+    color: rgba(255,255,255,.75) !important;
+}
+
+@media (max-width: 992px) {
+    .dark-mode-toggler {
+        width: auto;
+        top: 0;
+        right: 0;
+        padding: 0;
+    }
+
+    .dark-mode-toggler .nav-link::after {
+        content: '';
+        display: none;
+    }
 }
 
 @media (min-width: 992px) {
@@ -218,16 +248,4 @@ section.resume-section .resume-item .resume-date {
 
 .bg-primary {
     background-color: #5E37BB !important;
-}
-
-.text-primary {
-    color: #5E37BB !important;
-}
-
-a {
-    color: #5E37BB;
-}
-
-a:hover, a:focus, a:active {
-    color: #824027;
 }
