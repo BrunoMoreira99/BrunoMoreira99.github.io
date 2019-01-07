@@ -1,5 +1,10 @@
 "use strict";
 
+$(document).ready(() => {
+    const theme = getCookie('_theme');
+    $('body').addClass(theme || 't--light');
+});
+
 window.addEventListener('load', () => {
     // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
@@ -38,9 +43,6 @@ window.addEventListener('load', () => {
             setCookie('_theme', 't--light');
         }
     });
-    
-    const theme = getCookie('_theme');
-    if (theme) $('body').addClass(theme);
 });
 
 function setCookie(name, value, days) {
