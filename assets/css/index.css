@@ -230,6 +230,44 @@ section.resume-section .resume-item .resume-date {
     min-width: none;
 }
 
+.gdpr-banner {
+    display: none;
+    position: sticky;
+    bottom: 0;
+    background-color: #17181C;
+    border-top: 5px #5E37BB solid;
+    max-height: 88px;
+    padding: .5rem;
+}
+
+.gdpr-banner > p, .gdpr-banner > h2, .gdpr-banner > h5 {
+    color: #D1CEC9 !important;
+}
+
+.gdpr-banner .fa-cookie {
+    transform: scale(0.95);
+    transition: transform 500ms;
+}
+
+.gdpr-banner .fa-cookie:hover {
+    transform: scale(1);
+}
+
+.gdpr-dismiss {
+    cursor: pointer;
+    font-weight: 400 !important;
+}
+
+.gdpr-dismiss:hover {
+    font-weight: 900 !important;
+}
+
+@media (max-width: 992px) {
+    .gdpr-banner {
+        padding: 2rem;
+    }
+}
+
 @media (min-width: 768px) {
     section.resume-section {
         min-height: 100vh;
@@ -243,6 +281,32 @@ section.resume-section .resume-item .resume-date {
     section.resume-section {
         padding-top: 3rem !important;
         padding-bottom: 3rem !important;
+    }
+}
+
+@media print {
+    .bv, .ee {
+        display: none;
+    }
+    a {
+        text-decoration: none !important;
+    }
+    .social-icons {
+        -webkit-print-color-adjust: exact;
+    }
+    .social-icons::after {
+        content: "BrunoMoreira99";
+        margin-left: 1rem;
+        color: #343A40;
+    }
+    section.resume-section {
+        min-height: 0;
+    }
+    .gdpr-banner {
+        display: none !important;
+    }
+    .page-break {
+        page-break-after: always;
     }
 }
 
